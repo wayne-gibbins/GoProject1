@@ -43,7 +43,7 @@ build:
         name: go test
         code: |
           go test ./...
-    after-steps:
+    - after-steps:
         - sherzberg/slack-notify:
             subdomain: slacksubdomain
             token: W2xRROY8WkZWlmYpx0kUWGbf
